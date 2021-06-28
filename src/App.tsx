@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDom from 'react-dom';
 import ImportForm from './ImportForm';
 import OverviewFlow from './OverviewFlow';
 import StateDisplay from './StateDisplay';
 import './style.css';
-import logo from '../assets/fullLogoSmoreJS.png';
-import { RecoilRoot } from 'recoil';
+//import logo from '';
+import { RecoilRoot, useRecoilSnapshot } from 'recoil';
+
 
 const mainElement = document.createElement('div');
 mainElement.id = 'root';
@@ -14,12 +15,12 @@ document.body.appendChild(mainElement);
 const App = () => {
   return (
     <>
-      <center>
+      {/* <center>
         <img id="SmoreLogo" src={logo}/>
-      </center>
-      <center>
+      </center> */}
+      
         <h3>State Management Optimization for Recoil</h3>
-      </center>
+     
       <br></br>
       <RecoilRoot>
       

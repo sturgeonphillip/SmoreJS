@@ -1,5 +1,5 @@
-import {useRecoilValue} from 'recoil'
-import lodash from 'lodash'
+import { useRecoilValue } from 'recoil';
+import lodash from 'lodash';
 
 export const getNodes = (node: any) => {
   const nodeObj = {
@@ -89,3 +89,7 @@ export const checkChild = ( child: any, parent: any, boolean = [false] ) => {
   }
   return boolean[0];
 }
+
+
+
+console.log(typeof null);
