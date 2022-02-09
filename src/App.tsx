@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDom from 'react-dom';
 import AppContainer from './Containers/AppContainer';
 import LoginContainer from './Containers/LoginContainer';
@@ -12,7 +12,7 @@ mainElement.id = 'root';
 document.body.appendChild(mainElement);
 
 const App = () => {
-
+  
   return (
     <HashRouter>
       <RecoilRoot>
