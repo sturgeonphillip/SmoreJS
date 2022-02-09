@@ -12,13 +12,8 @@ app.get('/', ( req: any, res: any ) => {
   res.status(200).json({ name: 'eileen' });
 });
 
-// Organize all endpoint routes from electron API's
+// Organize all endpoint routes from electron APIs
 app.use('/electron', electronRouter);
-
-// app.get('/electron', ( req: any, res: any ) => {
-//   console.log('BRAIN');
-//   res.send({"queen of ktown": 5});
-// })
 
 // 404 handler
 app.use((req: any,res: any) => {

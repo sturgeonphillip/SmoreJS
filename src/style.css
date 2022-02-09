@@ -1,12 +1,16 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
 body {
   height: 100%;
   min-height: 100%;
-  max-height: 100%; 
-  /* overflow: hidden; */
+  max-height: 100%;
   background-color: rgb(250, 249, 246);
 }
 
-#top {
+h2 {
+  color: #1976d2;
 }
 
 #SmoreLogo {
@@ -14,20 +18,39 @@ body {
   width: auto;
   margin-top: 50px;
 }
-/*imported app and tree */
+
 #middle {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 2em;
   height: 100%;
-  /* align-content: space-between; */
+}
+
+.StateDataContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2em;
+  height: 100%;
 }
 
 #importForm {
   display: flex;
   flex-direction: column;
   width: 45%;
+}
+
+#dash {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 20px;
+  height: 38%;
+}
+
+#urlInputField{
+  height: 25%
 }
 
 #importFormButton {
@@ -37,9 +60,9 @@ body {
 }
 
 #flow-pad {
-  margin-top: 81px;
+  margin-top: 135px;
   width: 45%;
-  border: black solid 1px;
+
 }
 
 #frameId {
@@ -47,14 +70,84 @@ body {
   width: 100%;
 }
 
+#component-tree-tag {
+  margin-top: -135px;
+}
+
 #stateData {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 30px;
   align-content: space-around;
+  border: solid 1px;
+  text-align: left;
 }
 
-#component-tree-tag {
-  margin-top: -50px;
+#atomDiv, #selectorDiv {
+  color: rgb(7, 167, 159);
+  border-style: dotted;
+  border-color: rgb(7, 167, 159);
+  padding: 25px;
 }
-/* data */
+
+#atomDiv h2 {
+  color: rgb(7, 167, 159);
+}
+
+#selectorDiv h2 {
+  color: rgb(12, 79, 223);
+}
+
+.loginForm, .signupForm {
+  display: flex;
+  border: 1px solid black; 
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.atomSelectorMenus{
+  display: inline;
+}
+
+.appHeaderContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#logoutBtn{
+  height: 25%;
+  background-color: rgb(190, 182, 182);
+  margin-top: 25px;
+}
+
+#rightHeader{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+#logData{
+  border: 1px solid black;
+}
+
+.StateDataContainer{
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+#stateDataDiv{
+  flex: 50%;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 45px;
+
+}
+
+#logDiv{
+  flex: 50%;
+  padding: 10px;
+  margin-right: 50px;
+}
